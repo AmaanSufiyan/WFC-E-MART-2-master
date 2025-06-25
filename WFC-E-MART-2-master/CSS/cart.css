@@ -1,0 +1,71 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.fa-times {
+    color: #666;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.fa-times:hover {
+    color: #31572C;
+}
+
+.checkout-btn {
+    padding: 0.5rem 1rem;
+    background-color: #BC4749;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #386641;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.input-field input {
+    padding-left: 30px;
+}

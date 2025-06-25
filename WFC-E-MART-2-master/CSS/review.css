@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.info-container .info {
+    display: inline-block;
+    text-align: center;
+    padding-left: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.info-container .info img {
+    height: 16rem;
+}
+
+.info-container .info .content h3 {
+    font-size: 2rem;
+    color: #222;
+    padding-bottom: .5rem;
+}
+
+.info-container .info .content span {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.review .box {
+    padding: 2rem;
+    border: 2px solid rgba(0, 0, 0, .1);
+}
+
+.review .box .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.review .box .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.review .box .user h3 {
+    font-size: 2.2rem;
+    color: #222;
+    padding-bottom: .3rem;
+    text-transform: capitalize;
+}
+
+.review .box .user span {
+    font-size: 1.4rem;
+    color: firebrick;
+}
+
+.review .box p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2;
+}
+
+.review-buttons {
+    padding-left: 45rem;
+}
+
+.review-buttons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.review-buttons a:hover{
+    color: #C7573E;
+}
+
+
+.review-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.review-section .title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    padding: 10px; 
+    color: #fff;
+    background-color: #C7573E; 
+    border: 1px solid #C7573E; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(199, 87, 62, 0.1); 
+}
+
+.review-section .review-input {
+    margin-bottom: 15px;
+}
+
+.review-section .review-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.review-input input[type="text"] {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review-section .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;    
+}
+
+.review-section .rating input[type="radio"] {
+    margin-right: 2px;
+}
+
+.review-section .rating label {
+    margin-right: 10px;
+}
+
+.review-section .rating .fa-star:before {
+    color: #f1c40f;
+}
+  
+.review-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1.5rem;
+}
+  
+.review-section input[type="submit"] {
+    background-color: #C7573E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.review-section input[type="submit"]:hover {
+    background-color: teal;
+    color: white;
+}

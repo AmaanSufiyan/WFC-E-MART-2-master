@@ -1,0 +1,178 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: var(--primary);
+  transition: all 0.5s ease;
+}
+
+.sidebar.active {
+  width: 60px;
+}
+
+.sidebar .logo-details {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo-details i {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  min-width: 60px;
+  text-align: center;
+}
+
+.sidebar .logo-details .logo-name {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sidebar .nav-links {
+  margin-top: 10px;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 50px;
+}
+
+.sidebar .nav-links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar .nav-links li a.active i,
+.sidebar .nav-links li a.active span,
+.sidebar .nav-links li a.active,
+.sidebar .nav-links li a:hover i,
+.sidebar .nav-links li a:hover span,
+.sidebar .nav-links li a:hover {
+  color: var(--primary);
+  background: white;
+}
+
+.sidebar .nav-links li a i {
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.sidebar .nav-links li a .links-name {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.sidebar .nav-links .log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.page-wrapper {
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active~.page-wrapper {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+.page-wrapper nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  background: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  left: 240px;
+  padding: 0 20px;
+  transition: all 0.5s ease;
+  width: calc(100% - 240px);
+  z-index: 100;
+}
+
+.sidebar.active~.page-wrapper nav {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+
+.page-wrapper nav .sidebar-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.page-wrapper nav .sidebar-btn i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.page-wrapper nav .profile-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  min-width: 190px;
+}
+
+.page-wrapper nav .profile-details .admin-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.page-wrapper .page-content {
+  position: relative;
+  padding-top: 110px;
+}
+
+/* Responsive Media Query */
+@media (max-width: 720px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar.active {
+    width: 220px;
+  }
+
+  .page-wrapper {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+
+  .sidebar.active~.page-wrapper {
+    overflow: hidden;
+    left: 220px;
+  }
+
+  .page-wrapper nav {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+
+  .sidebar.active~.page-wrapper nav {
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+}

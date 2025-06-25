@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WFC E-MART Order Tracking</title>
+    <link rel="stylesheet" href="../CSS/order_tracking.css">
+
+    <!-- UniIcon CDN Link  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="head">
+            <p class="head_1">WFC <span> E-MART</span></p>
+            <p class="head_2">Custom Order Status</p>
+        </div>
+
+        <ul>
+            <li>
+                <i class="icon uil uil-list-ui-alt"></i>
+                <div class="progress selectItem">
+                    <p>1</p>
+                </div>
+                <p class="text">Select Item</p>
+            </li>
+            <li>
+                <i class="icon uil uil-file-check-alt"></i>
+                <div class="progress confirmOrder">
+                    <p>2</p>
+                </div>
+                <p class="text">Confirm Order</p>
+            </li>
+            <li>
+                <i  class="icon uil uil-box"></i>
+                <div class="progress Packing">
+                    <p>3</p>
+                </div>
+                <p class="text">Packing</p>
+            </li>
+            <li>
+                <i class="icon uil-truck" ></i>
+                <div class="progress Shipping">
+                    <p>4</p>
+                </div>
+                <p class="text">Shipping</p>
+            </li>
+            <li>
+                <i  class="icon uil uil-credit-card"></i>
+                <div class="progress Payment">
+                    <p>5</p>
+                </div>
+                <p class="text">Payment</p>
+            </li>
+            <li>
+                <i class="icon uil uil-home"></i>
+                <div class="progress Delivered">
+                    <p>6</p>
+                </div>
+                <p class="text">Delivered</p>
+            </li>
+        </ul>
+
+    </div>
+
+    <a href="all-products.php"><button id="ctn">Continue Shopping</button></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JavaScript/order_tracking.js"></script>
+    <style>
+        #ctn {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(90, 57, 57);
+            background-color: #217e0e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #ctn:hover {
+            background-color: #47c758;
+        }
+
+    </style>
+</body>
+</html>

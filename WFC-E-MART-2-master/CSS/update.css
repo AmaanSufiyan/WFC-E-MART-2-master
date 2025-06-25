@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import '../CSS/home.css';
+
+.account-form form {
+    background: #ffffff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 50rem;
+    margin: 2rem auto; /* Center align the form */
+}
+
+.account-form form h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #000000; /* Black color for heading */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.account-form form p {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: #999999; /* Light gray color for paragraph text */
+}
+
+.account-form form p span {
+    color: #ff0000; /* Red color for span text */
+}
+
+.account-form form .box {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: #000000; /* Black color for text */
+    background-color: #f9f9f9; /* Light gray background color */
+    margin: 1rem 0;
+}
+
+.account-form form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.account-form form .image {
+    height: 20rem;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 0.5rem;
+}
+
+.account-form form .link {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #999999; /* Light gray color for link text */
+}
+
+.account-form form .link a {
+    color: #ff0000; /* Red color for link */
+}
+
+.account-form form .link a:hover {
+    text-decoration: underline;
+}

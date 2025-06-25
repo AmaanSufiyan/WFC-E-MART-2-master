@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+.review-section {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.review-section .title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 10px; 
+    color: #fff;
+    background-color: #C7573E; 
+    border: 1px solid #C7573E; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(199, 87, 62, 0.1); 
+}
+
+.review-section .review-input {
+    margin-bottom: 15px;
+}
+
+.review-section .review-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.review-section input[type="text"],
+.review-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.review-section .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;    
+}
+
+.review-section .rating input[type="radio"] {
+    margin-right: 2px;
+}
+
+.review-section .rating label {
+    margin-right: 10px;
+}
+
+.review-section .rating .fa-star:before {
+    color: #f1c40f;
+}
+
+.review-section textarea {
+    resize: vertical;
+}
+
+.review-section input[type="submit"] {
+    background-color: #C7573E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.review-section input[type="submit"]:hover {
+    background-color: teal;
+    color: white;
+}
